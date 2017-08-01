@@ -8,12 +8,13 @@ install_prerequisites() {
 }
 
 
+#For CS50 image, we should not run it with priviledge
 #Request sudo permissions
-if [[ $UID != 0 ]]; then
-    echo "Please run this script with sudo:"
-    echo "sudo $0 $*"
-    exit 1
-fi
+#if [[ $UID != 0 ]]; then
+#    echo "Please run this script with sudo:"
+#    echo "sudo $0 $*"
+#    exit 1
+#fi
 
 # Check prerequisites
 
